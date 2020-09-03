@@ -3,6 +3,7 @@ import { Router } from "@reach/router";
 import NavBar from "./components/Navbar";
 import Home from "./components/Home";
 import LogIn from "./components/LogIn";
+import TheFooter from "./components/TheFooter";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         {/* <SignUp path="/signup" component={SignUp} /> */}
         <LogIn path="/login" component={LogIn} />
       </Router>
+      <TheFooter />
     </div>
   );
 }
