@@ -72,7 +72,9 @@ export default function HomeText() {
             our Donate Food page to learn how we can connect you to an
             organization in need!
           </Typography>
-          <button>Click here to donate food!</button>
+          <button class="butto">
+            <Link to="donate-food">Click here to donate food!</Link>
+          </button>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -96,7 +98,9 @@ export default function HomeText() {
             Visit our Claim Food Page to see what resturants in your area have
             left over food and claim it today!
           </Typography>{" "}
-          <button>Click here to claim food!</button>
+          <button class="butto">
+            <Link to="claim-food">Click here to claim food!</Link>
+          </button>
         </AccordionDetails>
       </Accordion>
       <Accordion

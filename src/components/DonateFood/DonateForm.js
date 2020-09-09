@@ -34,10 +34,10 @@ export default function DonateForm() {
       <div>
         <TextField
           id="standard-full-width"
-          label="Label"
+          label="Resturant Name"
           style={{ margin: 8 }}
-          placeholder="Placeholder"
-          helperText="Full width!"
+          placeholder="Resturant Name"
+          helperText="*required"
           fullWidth
           margin="normal"
           InputLabelProps={{
