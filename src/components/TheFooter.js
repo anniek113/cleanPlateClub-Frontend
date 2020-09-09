@@ -64,8 +64,8 @@ export default function TheFooter() {
                         </Link>
                     </Grid>
                     <Grid item xs={12} sm={9}>
-                        About US
-          </Grid>
+
+                    </Grid>
                 </Grid>
             </Container>
         </div>

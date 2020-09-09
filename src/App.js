@@ -4,7 +4,8 @@ import NavBar from "./components/Navbar";
 import Home from "./components/Home";
 import LogIn from "./components/LogIn";
 import TheFooter from "./components/TheFooter";
-
+import DonateHome from "./components/DonateFood/Donatehome";
+import ClaimHome from "./components/ClaimFood/ClaimHome";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Home path="/" />
         {/* <SignUp path="/signup" component={SignUp} /> */}
         <LogIn path="/login" component={LogIn} />
+        <DonateHome path="/donate-food" />
+        <ClaimHome path="/claim-food" />
       </Router>
       <TheFooter />
     </div>

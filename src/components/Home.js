@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import HomeText from "./HomeText";
 
 const useStyles = makeStyles((theme) => ({
     home: {
@@ -12,7 +13,16 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+
+
+
 export default function Home() {
     const classes = useStyles();
-    return <div className={classes.home}></div>;
+    return <div className={classes.home}>
+        <div>
+            <HomeText />
+        </div>
+
+    </div>;
+    // <HomeText />
 }
