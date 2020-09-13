@@ -30,6 +30,7 @@ export default function DonateForm() {
 
   return (
     <div className={classes.root}>
+      <img src="https://img.icons8.com/fluent-systems-filled/48/000000/meal.png" />
       <h1>Donate Food!</h1>
       <div>
         <TextField
@@ -149,6 +150,7 @@ export default function DonateForm() {
           margin="normal"
           variant="outlined"
         />
+        <button>Submit!</button>
       </div>
     </div>
   );

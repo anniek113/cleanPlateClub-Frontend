@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import SignUp from "./SignUp";
 import Modal from "@material-ui/core/Modal";
 import LogIn from "./LogIn";
+import { Link } from "@reach/router";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -72,8 +73,20 @@ export default function NavBar() {
           <Typography variant="h6" className={classes.title}>
             Charleston Clean Plate Club
           </Typography>
-          {/* <Button class="food" color='inherit'>Donate Food</Button>
-                    <Button class="food" color='inherit' >Claim Food</Button> */}
+          <img src="https://img.icons8.com/fluent-systems-filled/48/000000/meal.png" />
+          {/* <Link color="inherit" to="donate-food">
+            DONATE
+          </Link>
+          <Button class="food" color="inherit">
+            <Link color="inherit" to="donate-food">
+              DONATE
+            </Link>
+          </Button>
+          <Button class="food" color="inherit">
+            Claim Food
+          </Button>{" "}
+          */}{" "}
+          <Button color="inherit" onClick={signUpOpen}></Button>
           <Button color="inherit" onClick={signUpOpen}>
             Sign Up
           </Button>

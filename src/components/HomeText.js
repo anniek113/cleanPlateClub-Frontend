@@ -9,9 +9,9 @@ import { Link } from "@reach/router";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "75%",
+    width: "65%",
     position: "absolute",
-    left: "10%",
+    left: "15%",
     top: "20%",
     padding: 1,
     marginTop: 2,
@@ -68,13 +68,13 @@ export default function HomeText() {
 
         <AccordionDetails>
           <Typography>
-            If you have left over food and do not want it to go to waste, visit
-            our Donate Food page to learn how we can connect you to an
-            organization in need!
+            If you have left over food and do not want it to go to waste,{" "}
+            <Link to="donate-food">visit our Donate Food page </Link>to learn
+            how we can connect you to an organization in need!
           </Typography>
-          <button class="butto">
+          {/* <button class="butto">
             <Link to="donate-food">Click here to donate food!</Link>
-          </button>
+          </button> */}
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -95,12 +95,12 @@ export default function HomeText() {
         <AccordionDetails>
           <Typography>
             If you are an organization helping feed the hungry we can help.
-            Visit our Claim Food Page to see what resturants in your area have
-            left over food and claim it today!
+            <Link to="claim-food"> Visit our claim food page</Link>to see what
+            resturants in your area have left over food and claim it today!
           </Typography>{" "}
-          <button class="butto">
+          {/* <button class="butto">
             <Link to="claim-food">Click here to claim food!</Link>
-          </button>
+          </button> */}
         </AccordionDetails>
       </Accordion>
       <Accordion

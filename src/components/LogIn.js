@@ -70,7 +70,7 @@ export default function LogIn() {
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <Avatar className={classes.avatar}>
-            <img src="https://img.icons8.com/color/48/000000/hamburger.png" />
+            <img src="https://img.icons8.com/fluent-systems-filled/48/000000/meal.png" />
             {/* <LockOpenIcon /> */}
           </Avatar>
           <Typography component="h1" variant="h5">
