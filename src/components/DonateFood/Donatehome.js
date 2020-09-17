@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function DonateHome() {
   const classes = useStyles();
+
   return (
     <div className={classes.home}>
       <div>

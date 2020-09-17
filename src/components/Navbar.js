@@ -73,7 +73,6 @@ export default function NavBar() {
           <Typography variant="h6" className={classes.title}>
             Charleston Clean Plate Club
           </Typography>
-          <img src="https://img.icons8.com/fluent-systems-filled/48/000000/meal.png" />
           {/* <Link color="inherit" to="donate-food">
             DONATE
           </Link>

@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import ClaimList from "./ClaimList";
 
 const useStyles = makeStyles((theme) => ({
   home: {
@@ -18,7 +19,9 @@ export default function ClaimHome() {
 
   return (
     <div className={classes.home}>
-      <div>Hello!</div>
+      <div>
+        <ClaimList />
+      </div>
     </div>
   );
 }
