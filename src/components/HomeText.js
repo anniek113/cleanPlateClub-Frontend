@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "none",
-    opacity: 0.6,
+    opacity: 0.65,
   },
   heading: {
     fontSize: theme.typography.pxToRem(20),
