@@ -26,6 +26,12 @@ const useStyles = makeStyles((theme) => ({
   food: {
     alignContent: "center",
     marginLeft: theme.spacing(2),
+    backgroundColor: "none",
+    opacity: 0.001,
+  },
+  Button: {
+    marginRight: theme.spacing(2),
+    backgroundColor: "none",
   },
 }));
 
@@ -73,18 +79,12 @@ export default function NavBar() {
           <Typography variant="h6" className={classes.title}>
             Charleston Clean Plate Club
           </Typography>
-          {/* <Link color="inherit" to="donate-food">
-            DONATE
-          </Link>
-          <Button class="food" color="inherit">
-            <Link color="inherit" to="donate-food">
-              DONATE
-            </Link>
+          {/* <Button class="food" color="inherit">
+            <Link to="donate-food">DONATE</Link>
           </Button>
           <Button class="food" color="inherit">
-            Claim Food
-          </Button>{" "}
-          */}{" "}
+            <Link to="claim-food">CLAIM</Link>
+          </Button>{" "} */}
           <Button color="inherit" onClick={signUpOpen}></Button>
           <Button color="inherit" onClick={signUpOpen}>
             Sign Up

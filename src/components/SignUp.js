@@ -12,6 +12,8 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles, withTheme } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { navigate } from "@reach/router";
+import axios from "axios";
 
 function Copyright() {
   return (

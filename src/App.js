@@ -6,6 +6,8 @@ import LogIn from "./components/LogIn";
 import TheFooter from "./components/TheFooter";
 import DonateHome from "./components/DonateFood/Donatehome";
 import ClaimHome from "./components/ClaimFood/ClaimHome";
+import ThankYou from "./components/DonateFood/ThankYou";
+import ClaimInfo from "./components/ClaimFood/ClaimInfo";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <LogIn path="/login" component={LogIn} />
         <DonateHome path="/donate-food" />
         <ClaimHome path="/claim-food" />
+        <ThankYou path="/thankyou" />
+        <ClaimInfo path="claimed" />
       </Router>
       <TheFooter />
     </div>

@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
+import axios from "axios";
+import Button from "@material-ui/core/Button";
+import { Link, navigate } from "@reach/router";
+import ThankYou from "./ThankYou";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    //display: "flex",
-    //justifyContent: "center",
-    //alignItems: "center",
-    //flexWrap: "wrap",
-    //width: "75%",
     position: "absolute",
+    width: "85%",
     left: "10%",
     top: "20%",
     right: "10%",
@@ -23,16 +23,32 @@ const useStyles = makeStyles((theme) => ({
   form: {
     justifyContent: "center",
     alignItems: "center",
+    width: "85%",
   },
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: "25ch",
   },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+    backgroundColor: "green",
+  },
 }));
 
 export default function DonateForm() {
   const classes = useStyles();
+
+  //const [modalStyle] = React.useState(getModalStyle);
+  const [DonateForm, setDonateForm] = React.useState(false);
+
+  const DonateFormOpen = () => {
+    setDonateForm(true);
+  };
+
+  const handleCloseDonateForm = () => {
+    setDonateForm(false);
+  };
 
   return (
     <div className={classes.root}>
@@ -104,18 +120,10 @@ export default function DonateForm() {
           helperText="*required"
           variant="filled"
         />
-        {/* <TextField
-          label="Dense"
-          id="filled-margin-dense"
-          defaultValue="Default Value"
-          className={classes.textField}
-          helperText="Some important text"
-          margin="dense"
-          variant="filled"
-        /> */}
         <TextField
           label="Expiration Date"
           id="form"
+          placeholder="mm/dd/yyy"
           //defaultValue="Is the food perishable?"
           className={classes.textField}
           helperText="*required"
@@ -138,33 +146,30 @@ export default function DonateForm() {
           }}
           //variant="outlined"
         />
-        {/* <TextField
-          label="None"
-          id="outlined-margin-none"
-          defaultValue="Default Value"
-          className={classes.textField}
-          helperText="Some important text"
-          variant="outlined"
-        /> */}
-        {/* <TextField
-          label="Dense"
-          id="outlined-margin-dense"
-          defaultValue="Default Value"
-          className={classes.textField}
-          helperText="Some important text"
-          margin="dense"
-          variant="outlined"
-        />
-        <TextField
-          label="Normal"
-          id="outlined-margin-normal"
-          defaultValue="Default Value"
-          className={classes.textField}
-          helperText="Some important text"
-          margin="normal"
-          variant="outlined"
-        /> */}
-        <button>Submit!</button>
+        {/* <Button
+          // onClick={() => {
+          //   alert("Thank you!");
+          // }}
+          type="submit"
+          fullWidth
+          variant="contained"
+          color="primary"
+          className={classes.submit}
+        >
+          submit
+        </Button> */}
+        <Link to="../thankyou">
+          {" "}
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
+          >
+            submit
+          </Button>
+        </Link>
       </div>
     </div>
   );

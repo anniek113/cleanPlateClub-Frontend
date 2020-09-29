@@ -20,6 +20,8 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
 import DeleteIcon from "@material-ui/icons/Delete";
 import FilterListIcon from "@material-ui/icons/FilterList";
+import Button from "@material-ui/core/Button";
+import { Link } from "@reach/router";
 
 function createData(name, amount, expiration, location, contact, restaurant) {
   return { name, amount, expiration, location, contact, restaurant };
@@ -42,13 +44,55 @@ const rows = [
     "843-111-1127",
     "Laddle's"
   ),
-  createData("Eclair", 262, 16.0, 24, "678-983-7108"),
-  createData("Frozen yoghurt", 159, 6.0, 24, "843-900-1132"),
-  createData("Gingerbread", 356, 16.0, 49, "390-778-1905"),
-  createData("Honeycomb", 408, 3.2, 87, "843-101-0987"),
-  createData("Ice cream sandwich", 237, 9.0, 37, "678-889-0011"),
-  createData("Jelly Bean", 375, 0.0, 94, "843-367-5565"),
-  createData("KitKat", 518, 26.0, 65, "770-980-1224"),
+  createData(
+    "Ground Beef",
+    "6ibs",
+    "09/29/2020",
+    "187 Smith Street",
+    "678-983-7108",
+    "Smith's"
+  ),
+  createData(
+    "Frozen Veggies",
+    "two bags",
+    "2021",
+    "66 Broad Street",
+    "843-900-1132",
+    "Veggie Palace"
+  ),
+  createData(
+    "Pulled Pork and Chicken",
+    "20ish pounds",
+    "10/10/2020",
+    "978 King Street",
+    "390-778-1905",
+    "Rodney Scott's BBQ"
+  ),
+  createData(
+    "French Bread",
+    "4 loaves",
+    "10/02/2020",
+    "88 Rutledge Ave.",
+    "843-101-0987",
+    "BkeDSHoP"
+  ),
+  createData(
+    "Mac & Cheese and uncooked pasta",
+    "about 4 quarts",
+    "10/00/223",
+    "888 Ashley Ave.",
+    "678-889-0011",
+    "The Pasta Shop"
+  ),
+  createData(
+    "Flour and Sugar",
+    "7 pounds",
+    "unknown",
+    "171 St. Phillip Street",
+    "843-367-5565",
+    "Brown's Court"
+  ),
+  //createData("Veggie ", 518, 26.0, 65, "770-980-1224"),
   //   createData("Lollipop", 392, 0.2, 98, 0.0),
   //   createData("Marshmallow", 318, 0, 81, 2.0),
   //   createData("Nougat", 360, 19.0, 9, 37.0),
@@ -218,10 +262,18 @@ const EnhancedTableToolbar = (props) => {
 
       {numSelected > 0 ? (
         <Tooltip title="Claim">
-          <IconButton aria-label="">
-            {/* <DeleteIcon /> */}
-            <button>CLAIM</button>
-          </IconButton>
+          <Link to="../claimed">
+            {" "}
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              CLAIM
+            </Button>
+          </Link>
         </Tooltip>
       ) : (
         <Tooltip title="Filter list">
