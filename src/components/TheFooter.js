@@ -7,6 +7,8 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import { Container } from "@material-ui/core";
 import { blue } from "@material-ui/core/colors";
 import { Link } from "@reach/router";
+import Avatar from "@material-ui/core/Avatar";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: theme.palette.text.white,
   },
+
   // facebook: {
   //   color: "#1877f2",
   // },
@@ -65,11 +68,37 @@ export default function TheFooter() {
               className={classes.instagram}
             >
               <InstagramIcon className={classes.icons} />
+
+
             </Link> */}
-            <br></br>
             <Link class="link" to="donate-food">
               DONATE
             </Link>
+
+            {/* <Link class="link" to="donate-food">
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                color="primary"
+                className={classes.submit}
+              >
+                Donate
+              </Button>
+            </Link>
+            <br></br>
+            <Link class="link" to="claim-food">
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                padding="2"
+                color="primary"
+                className={classes.submit}
+              >
+                Claim
+              </Button>
+            </Link> */}
             <br></br>
             <Link class="link" to="claim-food">
               CLAIM

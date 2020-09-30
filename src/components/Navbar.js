@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import SignUp from "./SignUp";
 import Modal from "@material-ui/core/Modal";
 import LogIn from "./LogIn";
+import Avatar from "@material-ui/core/Avatar";
 import { Link } from "@reach/router";
 
 const useStyles = makeStyles((theme) => ({
@@ -18,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    fontSize: "2.75vh",
+  },
+  avatar: {
+    variant: "square",
   },
   appbar: {
     backgroundColor: "black",
@@ -76,6 +81,14 @@ export default function NavBar() {
     <div className={classes.root}>
       <AppBar className={classes.appbar} position="fixed">
         <Toolbar>
+          <Avatar className={classes.avatar}>
+            <Link className={classes.title} to="/">
+              <img
+                src="https://img.icons8.com/ios/100/000000/meal.png"
+                height="40"
+              />
+            </Link>
+          </Avatar>
           <Typography variant="h6" className={classes.title}>
             Charleston Clean Plate Club
           </Typography>

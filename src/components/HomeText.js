@@ -136,8 +136,12 @@ export default function HomeText() {
         <AccordionDetails>
           <Typography>
             Charleston Clean Plate Club was started in 2020 to help eliminate
-            food waste from resturants and connect it to local charities in the
+            food waste from restaurants and connect it to local charities in the
             Charleston area.
+            <br></br>
+            <Link to="facts">
+              Learn more about restaurant food wastes here!
+            </Link>
           </Typography>
         </AccordionDetails>
       </Accordion>

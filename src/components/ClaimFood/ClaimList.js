@@ -31,9 +31,9 @@ const rows = [
   createData(
     "Cupcakes",
     24,
-    "09/30/2020",
-    "410 King Street",
-    "843-727-1567",
+    "10/01/2020",
+    "257 Saint Margaret St",
+    "678-983-7108",
     "Annie's Bakery"
   ),
   createData(
@@ -49,7 +49,7 @@ const rows = [
     "6ibs",
     "09/29/2020",
     "187 Smith Street",
-    "678-983-7108",
+    "843-727-1567",
     "Smith's"
   ),
   createData(

@@ -8,6 +8,7 @@ import DonateHome from "./components/DonateFood/Donatehome";
 import ClaimHome from "./components/ClaimFood/ClaimHome";
 import ThankYou from "./components/DonateFood/ThankYou";
 import ClaimInfo from "./components/ClaimFood/ClaimInfo";
+import FactPage from "./components/FactPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <ClaimHome path="/claim-food" />
         <ThankYou path="/thankyou" />
         <ClaimInfo path="claimed" />
+        <FactPage path="facts" />
       </Router>
       <TheFooter />
     </div>
